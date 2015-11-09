@@ -1,0 +1,3 @@
+## An AngularJS Directive for expanding/collapsing long texts
+
+### in progress...

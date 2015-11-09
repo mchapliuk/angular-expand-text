@@ -1,0 +1,23 @@
+{
+  "name": "angular-expand-text",
+  "main": "angular-expand-text.js",
+  "version": "1.0.0",
+  "homepage": "https://github.com/mchapliuk/angular-expand-text",
+  "authors": [
+    "Maksym Chapliuk <m.chapliuk@gmail.com>"
+  ],
+  "description": "An AngularJS Directive for expanding/collapsing long texts",
+  "keywords": [
+    "expand",
+    "collapse",
+    "hide"
+  ],
+  "license": "MIT",
+  "ignore": [
+    "**/.*",
+    "node_modules",
+    "bower_components",
+    "test",
+    "tests"
+  ]
+}

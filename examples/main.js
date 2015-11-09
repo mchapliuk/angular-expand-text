@@ -1,0 +1,55 @@
+/**
+ * Created by mchapliuk on 01.10.15.
+ */
+
+'use strict';
+
+var app = angular.module('example', ['mch.expandText']);
+
+app.controller('MchExampleCtrl', ['$scope', function($scope) {
+    $scope.text = 'Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nunc tempus ex nunc, eu pretium ' +
+        'tortor consectetur ac. Etiam eget nisl elementum, sodales risus id, suscipit justo. Curabitur lacus dui,' +
+        ' mollis non ultrices vel, commodo sed enim. Nam lorem arcu, bibendum at diam at, dapibus pulvinar nunc. ' +
+        'Morbi ut odio nibh. Morbi mauris erat, elementum sollicitudin malesuada vitae, viverra at ex. Nam malesuada' +
+        ' ac eros vitae iaculis. Aenean consectetur enim in fringilla dictum. Ut consectetur ex at risus lacinia ' +
+        'aliquet. Proin sit amet enim vitae velit tincidunt faucibus. Etiam eleifend dolor nunc, non vestibulum ' +
+        'leo porttitor condimentum. Praesent id nibh dapibus, facilisis dolor eget, aliquam enim. Suspendisse ' +
+        'potenti. Nullam efficitur dignissim orci. ' +
+        'Suspendisse potenti. Morbi ligula arcu, mattis pretium consequat quis, convallis a nibh. Nullam ' +
+        'ultricies ligula neque, eget dapibus nulla euismod a. Sed sed nulla ornare, efficitur elit ut, ' +
+        'elementum ligula. Aliquam diam tortor, ultricies sit amet odio a, scelerisque sagittis diam. ' +
+        'Quisque sed lorem turpis. Ut auctor sapien metus, non hendrerit velit tempus vel. Ut ante lectus, ' +
+        'aliquam non diam a, accumsan finibus orci. Aliquam dignissim orci vel congue rhoncus. Cras vulputate ' +
+        'turpis eget lectus dictum aliquet eget vel odio. Pellentesque ut arcu dignissim, tempor dolor ut, ' +
+        'lacinia neque. Nam viverra justo magna, ut vehicula leo bibendum at.' +
+        'Nam metus tortor, porta et viverra eget, fermentum at eros. Curabitur vel metus ipsum. Integer porta ' +
+        'nisi vestibulum, ullamcorper risus et, bibendum risus. Pellentesque facilisis nisi eu laoreet tempor. ' +
+        'Praesent pulvinar magna ut augue bibendum, ut tincidunt leo faucibus. Curabitur fringilla pharetra ' +
+        'pulvinar. Integer velit nisi, convallis et ante vel, ultricies tempus nisl. Aliquam varius arcu ac ' +
+        'erat condimentum dictum. Nam dapibus lacus est, sit amet eleifend justo tempor sit amet. Nam mollis, ' +
+        'ex nec posuere vestibulum, mi nibh semper lacus, sit amet iaculis quam augue vitae augue. Vivamus ' +
+        'volutpat, libero sit amet iaculis vulputate, erat leo dignissim nibh, vel suscipit mauris augue id ' +
+        'orci. Proin porta ex sed rutrum vulputate. Nulla eget ligula sit amet mi mattis placerat in non felis.' +
+        ' Vestibulum semper pretium tellus sit amet blandit. Mauris ultricies metus a auctor porta. ' +
+        'Vestibulum ac augue ac odio laoreet placerat. Aenean eget ligula sed ante posuere maximus. Nullam ' +
+        'odio tellus, aliquam vel eros ultrices, pharetra elementum est. Ut eget nunc finibus, elementum sem ' +
+        'vel, pharetra odio. In iaculis sed turpis ut vestibulum. Nunc leo magna, semper quis tellus sit amet, ' +
+        'aliquet tincidunt odio. Quisque eget diam vulputate, pretium libero at, pulvinar sem. Integer pulvinar ' +
+        'maximus imperdiet. Maecenas ac erat ac odio elementum facilisis. Phasellus et purus at lacus lobortis ' +
+        'consectetur in at purus. ' +
+        'Vestibulum tellus libero, pharetra non leo eget, scelerisque mattis tellus. Pellentesque vitae finibus ' +
+        'mauris, ac pretium nunc. Nullam non venenatis leo. Etiam aliquam arcu fringilla arcu consequat ' +
+        'dignissim. Sed sodales vitae metus rutrum lacinia. Donec euismod tempus erat sollicitudin ultricies. ' +
+        'Donec vestibulum egestas faucibus. Donec vitae elit ac lorem dignissim semper ac et dolor. Mauris quis ' +
+        'tristique ante, id feugiat sem. Sed sed est aliquam, sodales purus eget, feugiat justo. Morbi vitae ' +
+        'lacinia nibh, vel sollicitudin urna. Aliquam nec leo felis. Fusce efficitur augue ut tellus suscipit, ' +
+        'ac sodales lorem facilisis. Nullam dapibus dictum dignissim.';
+
+    $scope.expandOptions = {
+        showMoreText: 'Хочу больше...',
+        isCollapsed: true
+        //, linkPlace: 'right'
+    };
+
+    $scope.lettersCount = 50;
+}]);
